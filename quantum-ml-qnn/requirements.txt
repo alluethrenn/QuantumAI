@@ -1,0 +1,23 @@
+quantum-ml-qnn
+├── src
+│   ├── main.py
+│   ├── qnn
+│   │   ├── layers.py
+│   │   └── models.py
+│   ├── utils
+│   │   └── helpers.py
+│   └── tests
+│       └── test_models.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+
+# The contents of the requirements.txt file
+
+numpy
+scipy
+pennylane
+tensorflow
+qiskit
+matplotlib
+pytest
