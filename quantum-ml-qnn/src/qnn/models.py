@@ -5,6 +5,7 @@ class QuantumModel:
 
     def add_layer(self, layer):
         self.layers.append(layer)
+       
 
     def compile(self, optimizer, loss):
         self.optimizer = optimizer
