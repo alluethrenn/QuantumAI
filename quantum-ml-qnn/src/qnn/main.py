@@ -1,4 +1,10 @@
-import pennylane as qml
+try:
+    import pennylane as qml
+except ModuleNotFoundError:
+    raise ModuleNotFoundError(
+        "The 'pennylane' library is not installed. Install it by running 'pip install pennylane'."
+    )
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -63,5 +69,3 @@ for epoch in range(epochs):
     print(f"Epoch {epoch+1}/{epochs}, Loss: {loss.item():.4f}")
 
 print("Training complete.")
-
-# Evaluate the model
